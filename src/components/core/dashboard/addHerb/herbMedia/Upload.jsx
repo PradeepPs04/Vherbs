@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player';
 // icons
 import { FiUploadCloud } from "react-icons/fi"
 
-export const Upload = ({name, label, isRequired=false, setValue, register, errors, video=false, editData=null}) => {
+const Upload = ({name, label, isRequired=false, setValue, register, errors, video=false, editData=null}) => {
 
     const [selectedFile, setSelectedFile] = useState("");
     const [previewSource, setPreviewSource] = useState(editData ? editData : "");
@@ -130,3 +130,5 @@ export const Upload = ({name, label, isRequired=false, setValue, register, error
     </div>
   )
 }
+
+export default Upload

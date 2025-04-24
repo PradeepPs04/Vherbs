@@ -7,26 +7,7 @@ import HerbMedia from '../components/core/herbMedia/Index';
 import HerbInformation from '../components/core/herbInformation/Index';
 
 
-const herbDetailsNavOptions = [
-  {
-    name: "Details",
-    id: 1,
-  },
-  {
-    name: "Uses",
-    id: 2,
-  },
-  {
-    name: "Cultvation",
-    id: 3,
-  },
-  {
-    name: "Add Note",
-    id: 4,
-  },
-]
-
-export const HerbDetails = () => {
+const HerbDetails = () => {
 
     // get herbId from params
     const {herbId} = useParams();
@@ -58,3 +39,5 @@ export const HerbDetails = () => {
 
   )
 }
+
+export default HerbDetails

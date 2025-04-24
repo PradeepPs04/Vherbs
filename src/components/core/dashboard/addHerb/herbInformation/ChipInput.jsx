@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { FiPlus } from "react-icons/fi";
 
-export const ChipInput = ({ name, label, placeholder, errors, register, setValue}) => {
+const ChipInput = ({ name, label, placeholder, errors, register, setValue}) => {
 
     const {herb, editHerb} = useSelector((state) => state.herb);
 
@@ -114,3 +114,5 @@ export const ChipInput = ({ name, label, placeholder, errors, register, setValue
     </div>
   )
 }
+
+export default ChipInput

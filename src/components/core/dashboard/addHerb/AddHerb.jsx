@@ -1,7 +1,7 @@
 import React from 'react'
 import { RenderSteps } from './RenderSteps'
 
-export const AddHerb = () => {
+const AddHerb = () => {
   return (
     <div className='py-20 mx-auto'>
         <div className="flex flex-col">
@@ -15,3 +15,5 @@ export const AddHerb = () => {
     </div>
   )
 }
+
+export default AddHerb

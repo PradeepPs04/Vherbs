@@ -8,7 +8,7 @@ import { MdOutlineModeEdit } from "react-icons/md";
 // components
 import { IconBtn } from '../../common/IconBtn';
 
-export const MyProfile = () => {
+const MyProfile = () => {
 
   const {user} = useSelector((state) => state.profile);
 
@@ -148,3 +148,5 @@ export const MyProfile = () => {
     </div>
   )
 }
+
+export default MyProfile

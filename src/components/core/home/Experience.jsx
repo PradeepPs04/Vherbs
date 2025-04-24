@@ -4,7 +4,7 @@ import { useWindowWidth } from "@react-hook/window-size";
 import { Book } from "./Book";
 import { useEffect, useState } from "react";
 
-export const Experience = () => {
+const Experience = () => {
 
   const windowWidth = useWindowWidth();
 
@@ -74,3 +74,5 @@ export const Experience = () => {
     </>
   );
 };
+
+export default Experience

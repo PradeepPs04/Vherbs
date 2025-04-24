@@ -12,7 +12,7 @@ import { IconBtn } from '../components/common/IconBtn';
 // APIs
 import { resetPassword } from '../services/operations/authAPIs';
 
-export const ResetPassword = () => {
+const ResetPassword = () => {
 
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -151,3 +151,5 @@ export const ResetPassword = () => {
       </div>
   )
 }
+
+export default ResetPassword

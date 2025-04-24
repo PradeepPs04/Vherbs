@@ -5,12 +5,12 @@ import { Loader } from '@react-three/drei';
 import { Suspense } from "react";
 
 // components
-import { Experience } from "../components/core/home/Experience";
-import { UI } from "../components/core/home/UI";
+import Experience from "../components/core/home/Experience";
+import UI from "../components/core/home/UI";
 import ClickSpark from '../components/common/ClickSpark';
 
 
-export const Home = () => {
+const Home = () => {
   
   return (
     <ClickSpark
@@ -63,3 +63,5 @@ export const Home = () => {
     </ClickSpark>
   )
 }
+
+export default Home

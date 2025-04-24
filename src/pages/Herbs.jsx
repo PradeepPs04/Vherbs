@@ -5,8 +5,8 @@ import { Paginator } from 'primereact/paginator';
 
 // components
 import FilterHerbs from '../components/core/herbs/FilterHerbs';
-import { HerbCard } from '../components/core/herbs/HerbCard'
-import HerbCardSkeleton from '../components/core/herbs/herbCardSkeleton';
+import HerbCard from '../components/core/herbs/HerbCard'
+import HerbCardSkeleton from '../components/core/herbs/HerbCardSkeleton';
 
 // APIs
 import { getPublishedHerbs } from '../services/operations/herbsAPIs';
@@ -15,7 +15,7 @@ import NoDataAvailable from '../components/common/NoDataAvailable';
 // constants
 const CARDS_PER_PAGE = 6;
 
-export const Herbs = () => {
+const Herbs = () => {
   // all herbs data
   const [allHerbs, setAllHerbs] = useState([]);
 
@@ -105,3 +105,5 @@ export const Herbs = () => {
     </main>
   )
 }
+
+export default Herbs

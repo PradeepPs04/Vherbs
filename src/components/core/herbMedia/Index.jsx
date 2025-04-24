@@ -14,7 +14,6 @@ import HerbVideo from './HerbVideo';
 import ModelViewer from '../../common/ModelViewer';
 
 
-
 const HerbMedia = ({herb}) => {
   
   // display loader

@@ -14,7 +14,8 @@ import { IconBtn } from '../../../common/IconBtn';
 // APIs
 import { changePassword } from '../../../../services/operations/profileSettingsAPIs';
 
-export const ChangePassword = () => {
+
+const ChangePassword = () => {
   
   const {token, loading} = useSelector((state) => state.auth);
   
@@ -151,3 +152,5 @@ export const ChangePassword = () => {
     </>
   )
 }
+
+export default ChangePassword

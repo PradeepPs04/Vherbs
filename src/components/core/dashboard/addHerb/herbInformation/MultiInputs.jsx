@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import TextAreaAutosize from 'react-textarea-autosize';
 
-// ixona
+// icons
 import { FiPlus } from 'react-icons/fi';
 import { MdDelete } from 'react-icons/md';
+
 
 const MultiInputs = ({name, label, placeholder, errors, register, setValue, getValues}) => {
 

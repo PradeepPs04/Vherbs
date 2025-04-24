@@ -54,7 +54,7 @@ const navLinks = [
   },
 ]
 
-export const Navbar = () => {
+const Navbar = () => {
   const {token} = useSelector((state) => state.auth);
   const {user} = useSelector((state) => state.profile);
 
@@ -277,3 +277,5 @@ export const Navbar = () => {
 
   )
 }
+
+export default Navbar

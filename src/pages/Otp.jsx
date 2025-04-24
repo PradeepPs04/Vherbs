@@ -13,7 +13,7 @@ import { sendOtp, signup } from '../services/operations/authAPIs';
 // maximum time after we can resend otp
 const OTP_RESEND_TIMER_SECONDS = 30;
 
-export const Otp = () => {
+const Otp = () => {
 
     const {signupData} = useSelector((state) => state.auth);
     const [otp, setOtp] = useState('');
@@ -134,3 +134,5 @@ export const Otp = () => {
 
   )
 }
+
+export default Otp

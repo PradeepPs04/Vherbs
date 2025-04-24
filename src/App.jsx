@@ -5,40 +5,40 @@ import { useSelector } from 'react-redux'
 import { ACCOUNT_TYPE } from './utils/constants'
 
 // 404 page
-import { PageNotFound } from './pages/PageNotFound'
+import PageNotFound from './pages/PageNotFound'
 
 // Navbar components
-import { Navbar } from './components/common/Navbar'
+import Navbar from './components/common/Navbar'
 
-import { Home } from './pages/Home'
+import Home from './pages/Home'
 
 // signup/login components
-import { OpenRoute } from './components/core/auth/OpenRoute'
-import { Signup } from './pages/Signup'
-import { Otp } from './pages/Otp';
-import { Login } from './pages/Login'
-import { ForgotPassword } from './pages/ForgotPassword'
-import { ResetPassword } from './pages/ResetPassword'
+import OpenRoute from './components/core/auth/OpenRoute'
+import Signup from './pages/Signup'
+import Otp from './pages/Otp';
+import Login from './pages/Login'
+import ForgotPassword from './pages/ForgotPassword'
+import ResetPassword from './pages/ResetPassword'
 
 // to make routes protected
-import { PrivateRoute } from './components/core/auth/PrivateRoute'
+import PrivateRoute from './components/core/auth/PrivateRoute'
 
 // common pages
-import { HerbDetails } from './pages/HerbDetails'
-import { Herbs } from './pages/Herbs'
+import HerbDetails from './pages/HerbDetails'
+import Herbs from './pages/Herbs'
 import HeatMapWrapper from './components/core/herbInformation/HeatMapWrapper'
 import ContactUs from './pages/ContactUs'
 import AboutUs from './pages/AboutUs'
 
 // dashboard pages
-import { Dashboard } from './pages/Dashboard'
-import { MyProfile } from './components/core/dashboard/MyProfile'
-import { Settings } from './components/core/dashboard/Settings/Index'
-import { ManageHerbs } from './components/core/dashboard/manageHerbs/ManageHerbs'
-import { AddHerb } from './components/core/dashboard/addHerb/AddHerb'
+import Dashboard from './pages/Dashboard'
+import MyProfile from './components/core/dashboard/MyProfile'
+import Settings from './components/core/dashboard/Settings/Index'
+import ManageHerbs from './components/core/dashboard/manageHerbs/ManageHerbs'
+import AddHerb from './components/core/dashboard/addHerb/AddHerb'
 import UserNotes from './components/core/dashboard/userNotes/Index'
-import { EditHerb } from './components/core/dashboard/editHerb/Index'
-import { Bookmarks } from './components/core/dashboard/Bookmarks'
+import EditHerb from './components/core/dashboard/editHerb/Index'
+import Bookmarks from './components/core/dashboard/Bookmarks'
 
 // chatbot
 import Chatbot from './components/common/Chatbot'

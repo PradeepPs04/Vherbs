@@ -32,7 +32,7 @@ import { navigateToRoute } from '../../../../utils/routeNavigator';
 import { deleteHerb, getAllHerbs } from '../../../../services/operations/herbsAPIs';
 
 
-export const ManageHerbs = () => {
+const ManageHerbs = () => {
 
     const [herbs, setHerbs] = useState([]);
     const [publishedHerbsCount, setPublishedHerbsCount] = useState([]);
@@ -261,3 +261,5 @@ export const ManageHerbs = () => {
     </div>
   )
 }
+
+export default ManageHerbs

@@ -10,7 +10,7 @@ import { IconBtn } from '../components/common/IconBtn';
 // APIs
 import { resetPasswordToken } from '../services/operations/authAPIs';
 
-export const ForgotPassword = () => {
+const ForgotPassword = () => {
 
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(false);
@@ -99,3 +99,5 @@ export const ForgotPassword = () => {
     </main>
   )
 }
+
+export default ForgotPassword

@@ -12,7 +12,8 @@ import { RiDeleteBinLine } from "react-icons/ri";
 import { deleteAccount } from '../../../../services/operations/profileSettingsAPIs';
 import { logout } from '../../../../services/operations/authAPIs';
 
-export const DeleteAccount = () => {
+
+const DeleteAccount = () => {
 
     const {token} = useSelector((state) => state.auth);
     const dispatch = useDispatch();
@@ -87,3 +88,5 @@ export const DeleteAccount = () => {
     </>
   )
 }
+
+export default DeleteAccount

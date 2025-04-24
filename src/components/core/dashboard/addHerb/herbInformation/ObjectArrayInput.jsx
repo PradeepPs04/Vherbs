@@ -6,7 +6,8 @@ import TextAreaAutosize from 'react-textarea-autosize';
 import { MdDelete } from "react-icons/md";
 import { FiPlus } from "react-icons/fi";
 
-export const ObjectArrayInput = ({
+
+const ObjectArrayInput = ({
   errors, 
   register, 
   setValue, 
@@ -120,3 +121,5 @@ export const ObjectArrayInput = ({
     </div>
   )
 }
+
+export default ObjectArrayInput

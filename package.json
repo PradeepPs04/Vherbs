@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "dev": "concurrently \"cd ../server/ && npm run dev\" -c \"bgBlue,bgYellow\" \"npm run start\"",
+    "dev": "concurrently \"cd ./server/ && npm run dev\" -c \"bgBlue,bgYellow\" \"npm run start\"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -19,7 +19,7 @@ import { getBookmarkedHerbs, removeBookmarkHerb } from '../../../services/operat
 import NoDataAvailable from '../../common/NoDataAvailable';
 
 
-export const Bookmarks = () => {
+const Bookmarks = () => {
   
   const [bookmarks, setBookmarks] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -204,3 +204,5 @@ export const Bookmarks = () => {
     </div>
   )
 }
+
+export default Bookmarks

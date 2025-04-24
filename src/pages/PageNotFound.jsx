@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const PageNotFound = () => {
+const PageNotFound = () => {
   return (
     <div className="py-20 w-11/12 max-w-[1280px] mx-auto h-screen flex flex-col lg:flex-row items-center justify-center space-y-16 lg:space-y-0 space-x-8 2xl:space-x-0">
         {/* text and button */}
@@ -40,3 +40,5 @@ export const PageNotFound = () => {
     </div>
   )
 }
+
+export default PageNotFound

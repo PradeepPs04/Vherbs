@@ -78,7 +78,8 @@ const sideBarOptions = [
     }
 ]
 
-export const SideBar = () => {
+
+const SideBar = () => {
 
     const [confirmationModalData, setConfirmationModalData] = useState(null);
     
@@ -190,3 +191,5 @@ export const SideBar = () => {
 
   )
 }
+
+export default SideBar

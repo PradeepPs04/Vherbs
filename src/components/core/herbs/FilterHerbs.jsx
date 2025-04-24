@@ -23,6 +23,7 @@ const inputPlaceholders = [
   "use",
 ]
 
+// component for Filter option pop up window
 const FilterOptionsContainer = ({
   setShowFilterOptions, 
   category, setCategory, 
@@ -214,6 +215,7 @@ const FilterOptionsContainer = ({
     </div>
   )
 }
+
 
 const FilterHerbs = ({allHerbs, setDisplayHerbs}) => {
 

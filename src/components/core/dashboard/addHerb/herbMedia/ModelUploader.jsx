@@ -8,7 +8,7 @@ import { FiUploadCloud } from 'react-icons/fi';
 import ModelViewer from '../../../../common/ModelViewer';
 
 
-export const ModelUploader = ({name, label, setValue, register, errors, editData}) => {
+const ModelUploader = ({name, label, setValue, register, errors, editData}) => {
     
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewSource, setPreviewSource] = useState(editData ? editData : null);
@@ -115,3 +115,5 @@ export const ModelUploader = ({name, label, setValue, register, errors, editData
         </div>
   )
 }
+
+export default ModelUploader

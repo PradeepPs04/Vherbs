@@ -13,7 +13,8 @@ import { IconBtn } from '../../../../common/IconBtn';
 // APIs
 import { updateHerb } from '../../../../../services/operations/herbsAPIs';
 
-export const PublishHerb = () => {
+
+const PublishHerb = () => {
 
   const {herb, editHerb} = useSelector((state) => state.herb);
   const {token} = useSelector((state) => state.auth);
@@ -112,3 +113,5 @@ export const PublishHerb = () => {
     </form>
   )
 }
+
+export default PublishHerb

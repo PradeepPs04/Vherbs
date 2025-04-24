@@ -6,15 +6,15 @@ import toast from 'react-hot-toast';
 import {setEditHerb, setStep} from '../../../../../slices/herbSlice';
 
 // components
-import { Upload } from '../Upload';
-import { ModelUploader } from './ModelUploader';
+import Upload from './Upload';
+import ModelUploader from './ModelUploader';
 import { IconBtn } from '../../../../common/IconBtn';
 
 // APIs
 import { updateHerb, uploadHerbMedia } from '../../../../../services/operations/herbsAPIs';
 
 
-export const HerbMedia = () => {
+const HerbMedia = () => {
 
   const {herb, editHerb} = useSelector((state) => state.herb);
   const {token} = useSelector((state) => state.auth);
@@ -181,3 +181,5 @@ export const HerbMedia = () => {
     </div>
   )
 }
+
+export default HerbMedia

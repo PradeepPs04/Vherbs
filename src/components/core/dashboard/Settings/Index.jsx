@@ -2,11 +2,11 @@ import React from 'react'
 
 // compnents
 import ProfileDetails from './ProfileDetails';
-import { ChangePassword } from './changePassword';
+import ChangePassword from './ChangePassword';
 import ProfilePicture from './ProfilePicture';
-import { DeleteAccount } from './DeleteAccount';
+import DeleteAccount from './DeleteAccount';
 
-export const Settings = () => {    
+const Settings = () => {    
 
   return (
     <div className='py-20 flex flex-col items-start gap-10'>
@@ -37,3 +37,5 @@ export const Settings = () => {
     </div>
   )
 }
+
+export default Settings

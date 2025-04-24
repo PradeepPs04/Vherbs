@@ -1,14 +1,13 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
+// components
+import HerbInformation from './herbInformation';
+import HerbMedia from './herbMedia/index';
+import PublishHerb from './publishHerb/PublishHerb';
+
 // icons
 import { FaCheck } from "react-icons/fa"
-
-// components
-import { HerbInformation } from './herbInformation';
-import { HerbMedia } from './herbMedia/index';
-import { PublishHerb } from './publishHerb/PublishHerb';
-
 
 export const RenderSteps = () => {
 

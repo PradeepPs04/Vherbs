@@ -10,7 +10,7 @@ import { FiPlus } from "react-icons/fi";
 import { navigateToRoute } from '../../../utils/routeNavigator';
 
 
-export const HerbCard = ({herb}) => {
+const HerbCard = ({herb}) => {
     const navigate = useNavigate();
 
     // to display max number of herb uses in card
@@ -110,3 +110,5 @@ export const HerbCard = ({herb}) => {
     </>
   )
 }
+
+export default HerbCard

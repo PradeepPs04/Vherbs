@@ -10,7 +10,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { login } from '../services/operations/authAPIs';
 
 
-export const Login = () => {
+const Login = () => {
   const {
     register,
     handleSubmit,
@@ -179,3 +179,5 @@ export const Login = () => {
     </main>
   )
 }
+
+export default Login

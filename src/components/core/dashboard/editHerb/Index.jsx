@@ -10,7 +10,7 @@ import { RenderSteps } from '../addHerb/RenderSteps';
 // APIs
 import { getHerbDetails } from '../../../../services/operations/herbsAPIs';
 
-export const EditHerb = () => {
+const EditHerb = () => {
   
   const [herbData, setHerbData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -72,3 +72,5 @@ export const EditHerb = () => {
 
   )
 }
+
+export default EditHerb

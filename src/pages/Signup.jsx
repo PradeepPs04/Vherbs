@@ -12,6 +12,7 @@ import { Dialog } from 'primereact/dialog';
 // API's
 import { sendOtp } from '../services/operations/authAPIs';
 
+// data for terms & conditions
 const termsAndConditions = [
   {
     id: 1,
@@ -45,7 +46,8 @@ const termsAndConditions = [
   },
 ]
 
-export const Signup = () => {
+
+const Signup = () => {
 
   const {
     register,
@@ -278,3 +280,5 @@ export const Signup = () => {
     </main>
   )
 }
+
+export default Signup

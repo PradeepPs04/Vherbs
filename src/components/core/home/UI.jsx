@@ -38,7 +38,8 @@ pages.push({
   back: "book-back",
 });
 
-export const UI = () => {
+
+const UI = () => {
   const [page, setPage] = useAtom(pageAtom);
 
   const buttonsContainerRef = useRef();
@@ -101,3 +102,5 @@ export const UI = () => {
       </div>
   );
 };
+
+export default UI

@@ -10,8 +10,8 @@ import TextAreaAutosize from 'react-textarea-autosize';
 import { Checkbox } from "primereact/checkbox";
 
 // components
-import { ChipInput } from './ChipInput';
-import { ObjectArrayInput } from './ObjectArrayInput';
+import ChipInput from './ChipInput';
+import ObjectArrayInput from './ObjectArrayInput';
 import MultiInputs from './MultiInputs';
 import { IconBtn } from '../../../../common/IconBtn';
 
@@ -23,7 +23,7 @@ import { createHerb, updateHerb } from '../../../../../services/operations/herbs
 import DropdownChipInput from './DropdownChipInput';
 
 
-export const HerbInformation = () => {
+const HerbInformation = () => {
   const {
     register,
     handleSubmit,
@@ -385,3 +385,5 @@ export const HerbInformation = () => {
     </div>
   )
 }
+
+export default HerbInformation

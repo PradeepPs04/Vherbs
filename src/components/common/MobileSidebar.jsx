@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Accordion, AccordionTab } from 'primereact/accordion';
-import { Sidebar } from 'primereact/sidebar';
 import { matchPath, useLocation, useNavigate } from 'react-router-dom';
 
-// utility functions
+
+// utility functions & constants
 import { navigateToRoute } from '../../utils/routeNavigator';
+import { ACCOUNT_TYPE } from '../../utils/constants';
 
 // icons
 import { GiHerbsBundle } from "react-icons/gi";
 import { IoAddSharp } from "react-icons/io5";
 import { CiUser, CiBookmark, CiSettings } from "react-icons/ci";
 import { FaRegNoteSticky } from "react-icons/fa6";
-import { RiLoginCircleLine, RiLogoutCircleLine } from "react-icons/ri";
+import { RiLogoutCircleLine } from "react-icons/ri";
 import { GiTreeBranch } from "react-icons/gi";
 import { MdHome, MdPermContactCalendar } from "react-icons/md";
 import { RiTeamFill } from "react-icons/ri";
 
+// prime react components
+import { Accordion, AccordionTab } from 'primereact/accordion';
+import { Sidebar } from 'primereact/sidebar';
+
 // Components
-import { ACCOUNT_TYPE } from '../../utils/constants';
 import { ConfirmationModal } from './ConfirmationModal';
 
 // APIs
