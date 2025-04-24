@@ -5,7 +5,7 @@ import { Paginator } from 'primereact/paginator';
 
 // components
 import FilterHerbs from '../components/core/herbs/FilterHerbs';
-import { HerbCard } from '../components/core/herbs/herbCard'
+import { HerbCard } from '../components/core/herbs/HerbCard'
 import HerbCardSkeleton from '../components/core/herbs/herbCardSkeleton';
 
 // APIs
