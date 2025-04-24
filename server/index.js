@@ -36,7 +36,7 @@ app.use(fileUpload({
     tempFileDir: '/tmp/'
 }));
 app.use(cors({
-    origin: ['http://localhost:5173'],
+    origin: ['https://vherbs.vercel.app'],
     credentials: true,
 }));
 

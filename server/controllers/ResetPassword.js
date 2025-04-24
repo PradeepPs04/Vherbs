@@ -42,7 +42,7 @@ exports.resetPasswordToken = async (req, res) => {
         );
 
         // send email with reset password link
-        const url = `http://localhost:5173/reset-password/${token}`;
+        const url = `https://vherbs.vercel.app/reset-password/${token}`;
         await mailSender(
             email,
             "Password reset link",
