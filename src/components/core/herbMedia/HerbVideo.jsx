@@ -17,7 +17,7 @@ const HerbVideo = ({video}) => {
             </div>
          ) : (
           <div
-            className='w-full h-full flex justify-center items-center text-4xl text-center font-bold tracking-widest bg-[#DDDDDD]'
+            className='w-full h-full flex justify-center items-center text-4xl text-center tracking-widest bg-[#DDDDDD]'
           >
               Video will be uploaded soon! <br/> Stay tuned :)
           </div>
