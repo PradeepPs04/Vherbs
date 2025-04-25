@@ -136,7 +136,7 @@ const MobileSidebar = ({visible, setVisible}) => {
     const headerTemplate = () => {
         return (
             <div>
-                <p className='font-bold text-xl'>VHerbs logo</p>
+                <p className='font-bold text-xl'>VHerbs</p>
             </div>
         )
     }
