@@ -125,7 +125,6 @@ export async function deleteNote(data, token, dispatch) {
 
 // function to get all user notes
 export async function getUserNotes(token) {
-    const toastId = toast.loading("Loading...");
     let result = [];
 
     try {
@@ -148,6 +147,5 @@ export async function getUserNotes(token) {
         toast.error(err?.response?.data?.message || err.message);
     }
 
-    toast.dismiss(toastId);
     return result;
 }

@@ -7,7 +7,7 @@ const {CONTACT_API} = contactEndpoints;
 
 // function to send user messages to VHerb email address
 export async function contactUs(data) {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Sending message...");
     let success = false;
 
     try {

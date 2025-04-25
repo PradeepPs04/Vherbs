@@ -23,9 +23,8 @@ const {
 
 // function to get all herbs for admin dashboard
 export async function getAllHerbs(token) {
-    const toastId = toast.loading("Loading...");
     let result = [];
-
+    
     try {
         const response = await apiConnector("GET", GETALLHERBS_API, {}, {Authorization: `Bearer ${token}`});
 
@@ -42,14 +41,12 @@ export async function getAllHerbs(token) {
         toast.error(err?.response?.data?.message || err.message);
     }
 
-    toast.dismiss(toastId);
     return result;
 }
 
 
 // function to get all pubhlished herbs for explore herbs page
 export async function getPublishedHerbs() {
-    const toastId = toast.loading("Loading...");
     let result = [];
 
     try {
@@ -68,14 +65,13 @@ export async function getPublishedHerbs() {
         toast.error(err?.response?.data?.message || err.message);
     }
 
-    toast.dismiss(toastId);
     return result;
 }
 
 
 // function to create herb
 export async function createHerb(token, data) {
-const toastId = toast.loading("Loading...");
+const toastId = toast.loading("Creating data...");
 let result = null;
 
 try {
@@ -142,7 +138,7 @@ export async function uploadHerbMedia(data, token) {
 
 // function to update herb details
 export async function updateHerb(token, data) {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Updating data...");
     let result = null;
     try {
         const response = await apiConnector(
@@ -173,7 +169,7 @@ export async function updateHerb(token, data) {
 
 // function to delete herb
 export async function deleteHerb(token, herbId) {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Deleting data...");
     let success = false;
 
     try {
@@ -205,7 +201,6 @@ export async function deleteHerb(token, herbId) {
 
 // function to get details of a specific herb
 export async function getHerbDetails(herbId) {
-    const toastId = toast.loading("Loading...");
     let result = null;
 
     try {
@@ -230,7 +225,6 @@ export async function getHerbDetails(herbId) {
         toast.error(err?.response?.data?.message || err.message);
     }
 
-    toast.dismiss(toastId);
     return result;
 }
 
@@ -311,7 +305,6 @@ export async function removeBookmarkHerb(herbId, token, dispatch) {
 
 // function to get all bookmarked herbs
 export async function getBookmarkedHerbs(token) {
-    const toastId = toast.loading("Loading...");
     let result = [];
 
     try {
@@ -333,8 +326,6 @@ export async function getBookmarkedHerbs(token) {
         // console.error("GET BOOKMARKED HERBS API error...", err);
         toast.error(err?.response?.data?.message || err.message);
     }
-
-    toast.dismiss(toastId);
 
     return result;
 }

@@ -14,7 +14,7 @@ const {
 
 // function to call upload/update profile picture API
 export async function updateProfilePicture(token, data, dispatch) {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Uploading image...");
     let result = null;
 
     try {
@@ -82,7 +82,7 @@ export async function deleteProfilePicture(token, dispatch) {
 
 // function to call update profile details API
 export async function updateProfileDetails(token, data, dispatch) {
-    const toastId = toast.loading("Loading...");
+    const toastId = toast.loading("Updating data...");
 
     try {
         const response = await apiConnector(
