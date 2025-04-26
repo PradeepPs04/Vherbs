@@ -119,12 +119,12 @@ const HerbInformation = ({herb}) => {
         {/* herb name & bookmark, like */}
         <div className='flex flex-col xs:flex-row  space-y-2 justify-between items-baseline'>
             {/* herb name */}
-            <div className=''>
-              <p className='text-3xl font-semibold'>
+            <div>
+              <p className='text-2xl sm:text-3xl font-semibold'>
                 {herb?.botanicalName}
               </p>
 
-              <p className='text-xl italic text-richblack-400 font-semibold'>
+              <p className='text-lg sm:text-xl italic text-richblack-400 font-semibold'>
                 {herb?.commonName}
               </p>
             </div>
@@ -202,7 +202,7 @@ const HerbInformation = ({herb}) => {
         </div>
 
         {/* herb details according to current tab option */}
-        <div className='max-h-[50vh] overflow-auto px-6'>
+        <div className='max-h-[50vh] overflow-auto px-4'>
           {   
               // render herb parts used
               activeTab.type === 'chipInput' ? (

@@ -2,7 +2,7 @@ import React from 'react'
 
 const HerbImage = ({image}) => {
   return (
-    <div className='h-full'>
+    <div className='sm:h-full rounded-lg overflow-hidden'>
         <img 
             src={image} 
             alt='Herb Image'

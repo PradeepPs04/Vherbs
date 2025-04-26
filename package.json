@@ -39,7 +39,6 @@
     "react-router-dom": "^7.1.5",
     "react-super-responsive-table": "^6.0.1",
     "react-textarea-autosize": "^8.5.7",
-    "react-tooltip": "^5.28.0",
     "three": "^0.176.0"
   },
   "devDependencies": {
