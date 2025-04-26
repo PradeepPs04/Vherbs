@@ -96,7 +96,7 @@ const Navbar = () => {
           <Link to="/" 
             className='text-2xl font-bold flex items-center gap-1'>
             <img 
-              src='./logo.jpeg'
+              src='https://res.cloudinary.com/dmxrsreim/image/upload/v1745686335/logo_oo0nvt.png'
               className={`w-[40px] rounded-full 
               ${pathMatch('/') && 'opacity-60'}`}
             />

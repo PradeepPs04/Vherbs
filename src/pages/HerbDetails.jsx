@@ -24,6 +24,15 @@ const HerbDetails = () => {
         fetchHerbDetails();
     }, []);
 
+  // display loader
+  if(!herb) {
+    return (
+      <div className='flex items-center justify-center h-screen'>
+            <div className='loader'></div>
+      </div>
+    );
+  }
+
   return (
     <main>
       <div className='py-20 w-11/12 max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8'>

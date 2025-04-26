@@ -15,15 +15,6 @@ import ModelViewer from '../../common/ModelViewer';
 
 
 const HerbMedia = ({herb}) => {
-  
-  // display loader
-  if(!herb) {
-    return (
-      <div className='flex items-center justify-center h-screen'>
-            <div className='loader'></div>
-      </div>
-    );
-  }
 
   // components data corresponding to menu bar
   const menuBarItems = [
