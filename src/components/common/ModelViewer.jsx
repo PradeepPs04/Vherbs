@@ -46,7 +46,7 @@ const ModelViewer = ({model, isFloating=false}) => {
             </Canvas>
         </div>
         ) : (
-            <div className='w-full h-full text-center flex justify-center items-center text-4xl tracking-widest'>
+            <div className='w-full h-full text-center flex justify-center items-center text-2xl sm:text-3xl tracking-widest'>
                 <p>Model will be uploaded soon! <br/> Stay tuned :)</p>
             </div>
         )
