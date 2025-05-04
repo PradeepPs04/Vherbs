@@ -122,7 +122,6 @@ const Otp = () => {
                 <div className='mt-14 flex items-center justify-center gap-2'>
                     <button
                         onClick={handleOtpSubmit}
-                        disabled={loading}
                         className='bg-[#766CDD] hover:bg-[#4c43d6] text-white py-2 w-full rounded-full cursor-pointer transition-all duration-300'
                     >
                         Submit
