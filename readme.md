@@ -31,6 +31,8 @@
 4. Install modules:
    ```bash
    npm install
+   cd server
+   npm install
 5. Run project:
    ```bash
    npm run dev
