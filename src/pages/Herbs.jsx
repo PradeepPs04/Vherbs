@@ -55,9 +55,19 @@ const Herbs = () => {
 
           {/* total herbs count */}
           <div className='mt-8'>
+          {
+            // herbs count skeleton 
+            loading ? (
+                <div class='text-center text-2xl uppercase font-semibold tracking-widest animate-pulse'>
+                  <p class='h-6 bg-gray-200 rounded w-32 mx-auto'></p>
+                </div>
+            ) : (
+              // herbs count
             <p className='text-center text-2xl uppercase font-semibold tracking-widest'>
               Herbs ({displayHerbs.length})
             </p>
+            )
+          }
           </div>
 
           {/* herb cards container*/}
