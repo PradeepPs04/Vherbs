@@ -20,9 +20,7 @@ const teamMembersDetails = [
         photo: team_member_1,
         role: 'Project Lead',
         linkedInLink: 'https://www.linkedin.com/in/pradeep-singh-b300362b3/',
-        xLink: '#',
         instagramLink: 'https://www.instagram.com/ps_prad_eep/',
-        facebookLink: '#',
     },
     {
         id: 2,
