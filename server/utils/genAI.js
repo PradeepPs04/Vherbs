@@ -1,7 +1,5 @@
 const {
-  GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold,
+  GoogleGenerativeAI
 } = require("@google/generative-ai");
 
 require('dotenv').config();
